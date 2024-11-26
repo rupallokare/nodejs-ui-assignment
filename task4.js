@@ -12,9 +12,9 @@ async function addition(num1, num2) {
     });
 }
 
-async function main(agr1, arg2) {
+async function main(num1, num2) {
     try {
-        const result = await addition(agr1, arg2);
+        const result = await addition(num1, num2);
         console.log(result);
     } catch (error) {
         console.log("ERROR: ",error);
