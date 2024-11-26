@@ -1,0 +1,46 @@
+<!--
+Task 2 - Create HTML page to Accept First Name and Last Name of user. When the input field gets focus then change its background color and when focus goes out it should change to previous color.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 2</title>
+</head>
+
+<body>
+    <div>
+
+        <div class="width-25">
+            <label for="firstname">Enter your firstname</label>
+            <input id="firstname" type="text">
+        </div>
+        <div class="width-25">
+            <label for="secondname">Enter your lastname</label>
+            <input id="secondname" type="text">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .width-25 {
+        width: 25%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    input:focus {
+        background-color: fuchsia !important;
+    }
+</style>
+
+</html>

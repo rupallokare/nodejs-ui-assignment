@@ -1,0 +1,56 @@
+<!--
+Task 1 - Simple calculator which will add two input number and display result on page
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<script>
+    function add() {
+        const number1 = document.getElementById("num1").value;
+        const number2 = document.getElementById("num2").value;
+        const sum = Number(number1) + Number(number2);
+        document.getElementById("answer").innerText = `Sum = ${sum}`;
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div>
+            <input id="num1" class="form-control" type="number">
+        </div>
+        <div>
+            <input id="num2" class="form-control" type="number">
+        </div>
+        <div>
+            <button type="button" onclick="add()">ADD</button>
+        </div>
+        <p id="answer"></p>
+    </div>
+</body>
+<style>
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    p {
+        margin-top: 20px;
+        font-weight: 200;
+    }
+
+    input {
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+
+</html>
